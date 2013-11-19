@@ -1,0 +1,52 @@
+
+INSERT INTO Profile VALUES(1, 'Shenoda', 'shg@pitt.edu', 'shpwd', '13-OCT-1977', '/afs/pitt.edu/home/s/g/shg18/public/photo.jpg', 'CS 1555 TA', '11-NOV-2012');
+INSERT INTO Profile VALUES(2, 'Lory', 'lra@pitt.edu', 'lpwd', '08-MAR-1986', NULL, 'Member of ADMT Lab', '10-NOV-2012');
+INSERT INTO Profile VALUES(3, 'Peter', 'pdj@pitt.edu', 'ppwd', '09-JAN-1984', 'http://www.cs.pitt.edu/~peter', 'Graduate Student in CS dept.', '10-NOV-2012');
+INSERT INTO Profile VALUES(4,'Alexandrie', 'alx@pitt.edu', 'apwd', '21-AUG-1975', NULL, 'Architecture researcher', '11-NOV-2012');
+INSERT INTO Profile VALUES(5 'Panickos', 'pnk@pitt.edu', 'kpwd', '08-SEP-1989', NULL, 'ADMT Lab researcher', '08-NOV-2012');
+INSERT INTO Profile VALUES(6 'Socratis', 'soc@pitt.edu', 'spwd', '17-MAY-1981', NULL, 'TA in CS dept', '09-NOV-2012');
+INSERT INTO Profile VALUES(7 'Yaw', 'yaw@pitt.edu', 'ypwd', '27-FEB-1987', NULL, 'Staff at CS dept', '07-NOV-2012');
+
+INSERT INTO Friends VALUES(1,2, '06-JAN-2008', 'Hey, it is me  Shenoda!' );
+INSERT INTO Friends VALUES(1,5, '15-JAN-2011', 'Hey, it is me  Shenoda!');
+INSERT INTO Friends VALUES(2,3,'23-AUG-2007', 'Hey, it is me  Lory!');
+INSERT INTO Friends VALUES(2,4,'17-FEB-2008', 'Hey, it is me  Lory!');
+INSERT INTO Friends VALUES(3,4,'16-SEP-2010', 'Hey, it is me  Peter!');
+INSERT INTO Friends VALUES(4,6,'06-OCT-2010', 'Hey, it is me  Alexandrie!');
+INSERT INTO Friends VALUES(6,7,'13-SEP-2012', 'Hey, it is me  Socratis!');
+
+INSERT INTO PendingFriends VALUES(7,4,'Hey, it is me Yaw');
+INSERT INTO PendingFriends VALUES(5,2,'Hey, it is me Panickos');
+INSERT INTO PendingFriends VALUES(2,6,'Hey, it is me Lory');
+
+INSERT INTO Messages VALUES(1, 1, 'are we meeting tomorrow for the project?', 2, NULL, '09-NOV-2012');
+INSERT INTO Messages VALUES(2, 1, 'Peter's pub tomorrow?', 5, NULL, '07-NOV-2012');
+INSERT INTO Messages VALUES(3, 2, 'Please join our DB Group forum tomorrow', NULL, 1, '06-NOV-2012');
+INSERT INTO Messages VALUES(4, 5, 'Here is the paper I will present tomorrow', NULL, 2, '04-NOV-2012');
+
+INSERT INTO MessageRecipient VALUES(2,1);
+INSERT INTO MessageRecipient VALUES(5,2);
+INSERT INTO MessageRecipient VALUES(1,3);
+INSERT INTO MessageRecipient VALUES(2,3);
+INSERT INTO MessageRecipient VALUES(3,3);
+INSERT INTO MessageRecipient VALUES(4,3);
+INSERT INTO MessageRecipient VALUES(5,3);
+INSERT INTO MessageRecipient VALUES(6,3);
+INSERT INTO MessageRecipient VALUES(7,3);
+INSERT INTO MessageRecipient VALUES(1,4);
+INSERT INTO MessageRecipient VALUES(2,4);
+INSERT INTO MessageRecipient VALUES(5,4);
+
+INSERT INTO Groups VALUES(1, 'Grads at CS', 'list of all graduate students');
+INSERT INTO Groups VALUES(2, 'DB Group', 'member of the ADMT Lab.');
+
+INSERT INTO GroupMembership VALUES(1,1);
+INSERT INTO GroupMembership VALUES(1,2);
+INSERT INTO GroupMembership VALUES(1,3);
+INSERT INTO GroupMembership VALUES(1,4);
+INSERT INTO GroupMembership VALUES(1,5);
+INSERT INTO GroupMembership VALUES(1,6);
+INSERT INTO GroupMembership VALUES(1,7);
+INSERT INTO GroupMembership VALUES(2,1);
+INSERT INTO GroupMembership VALUES(2,2);
+INSERT INTO GroupMembership VALUES(2,5);
